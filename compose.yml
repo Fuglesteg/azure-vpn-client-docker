@@ -1,0 +1,8 @@
+services:
+  azure-vpn:
+    build: .
+    privileged: true
+    environment:
+      - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
